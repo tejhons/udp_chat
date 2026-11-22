@@ -31,3 +31,7 @@ Linux:
 ![Windows_test1](images/win_chat_test.png)
 
 ![Linux_test1](images/Linux_test1.png)
+
+![Compiler_explorer](images/client_O0Build.png)
+
+![Compiler_explorer](images/client_O2Build.png)
