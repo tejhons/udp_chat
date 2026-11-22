@@ -16,18 +16,17 @@ Because UDP is connectionless, there is no handshake. The order is:
 - Each side runs a background thread on recvfrom() while the main thread reads input and calls sendto().
 
 ### Requirements
-- Windows 11 / Ubuntu LTS (What I used)
+- Windows 11 / Ubuntu LTS (2 terminal windows on one machine or use two physical machines)
 - C++20
-- 1-2 Machines
 
 ### Build
 Windows:
-- g++ -std=c++20 -Wall -Wextra server.cpp -o server.exe -lws2_32
-- g++ -std=c++20 -Wall -Wextra client.cpp -o client.exe -lws2_32
+- g++ -std=c++20 -Wall -Wextra -O2 server.cpp -o server.exe -lws2_32
+- g++ -std=c++20 -Wall -Wextra -O2 client.cpp -o client.exe -lws2_32
 
 Linux:
 - g++ -std=c++20 -Wall -Wextra -pthread server.cpp -o server
-
+- g++ -std=c++20 -Wall -Wextra -pthread client.cpp -o client
 
 ![Windows_test1](images/win_chat_test.png)
 
