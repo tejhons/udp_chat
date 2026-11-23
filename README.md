@@ -1,4 +1,4 @@
-## 📦 UDP Chat
+## 🫧 UDP Chat
 
 ### Features
 - Server auto picks a free port and prints its IP adrress along with port.
